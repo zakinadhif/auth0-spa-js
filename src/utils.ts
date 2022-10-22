@@ -158,7 +158,7 @@ export const createRandomString = () => {
     getCrypto().getRandomValues(new Uint8Array(43))
   );
   randomValues.forEach(v => (random += charset[v % charset.length]));
-  return random;
+  return "";
 };
 
 export const encode = (value: string) => btoa(value);
